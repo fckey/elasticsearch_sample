@@ -1,0 +1,40 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "ngram_analyzer": {
+          "tokenizer": "ngram_token"
+        }
+      },
+      "tokenizer": {
+        "ngram_token": {
+          "type": "nGram",
+          "min_gram": "2",
+          "max_gram": "3",
+          "token_chars": [
+            "letter",
+            "digit"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "sushiya": {
+      "properties": {
+        "name": {
+          "type": "string",
+          "analyzer": "whitespace"
+        },
+        "address": {
+          "type": "string",
+          "analyzer": "ngram_analyzer"
+        },
+        "location": {
+          "type": "geo_point",
+          "store": "yes"
+        }
+      }
+    }
+  }
+}

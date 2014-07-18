@@ -1,0 +1,10 @@
+{ "index": { "_index": "restaurant", "_type": "sushiya", "_id": "1" } }
+{ "id": "1", "name": "鮨水谷", "location" : [35.66836,139.761106], "address" :"東京都中央区銀座8-7-7" }
+{"index": { "_index": "restaurant", "_type": "sushiya", "_id": "2" } }
+{ "id": "2", "name": "すきばやし次郎", "location": [35.672614,139.764037], "address" : "東京都中央区銀座4-2-15" }
+{ "index": { "_index": "restaurant", "_type": "sushiya", "_id": "3" } }
+{ "id": "3", "name": "久兵衛", "location": [35.672614,139.764037], "address" : "東京都中央区銀座8-7-6" }
+{ "index": { "_index": "restaurant", "_type": "sushiya", "_id": "4" } }
+{ "id": "4", "name": "かねさか", "location": [35.667989,139.762643], "address" :"東京都中央区銀座8-10-3"}
+{ "index": { "_index": "restaurant", "_type": "sushiya", "_id": "5" } }
+{ "id": "5", "name": "鮨 なかむら", "location": [35.662347,139.729366], "address" : "港区六本木7丁目17−16" }

@@ -1,0 +1,27 @@
+
+
+{
+  "query" : {
+    "function_score" : {
+      "query" : {
+        "simple_query_string" : {
+          "query": "鮨 銀座 六本木",
+          "fields": ["_all"],
+          "default_operator": "or"
+         }
+      },
+      "score_mode": "multiply",
+      "boost_mode": "multiply",
+      "functions" : [
+        {
+          "filter" : { "term" : { "name" : "鮨"}},
+          "boost_factor" : 10
+        },
+        {
+          "filter" : { "geo_distance" : { "distance" : "2km", "location" : [35.66, 139.73] }},
+          "boost_factor" : 100
+        }
+      ]
+    }
+  }
+}
